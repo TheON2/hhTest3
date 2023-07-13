@@ -27,12 +27,12 @@ function App() {
       body: body,
       isDone: false,
     };
-    dispatch(addToDoWithDelay(newTodo));
+    dispatch(__addToDo(newTodo));
     resetInputs()
   };
 
   const onDeleteTodo = (id) => {
-    dispatch(deleteToDoWithDelay(id))
+    dispatch(__deleteTodo(id))
   };
 
   const resetInputs = () => {
